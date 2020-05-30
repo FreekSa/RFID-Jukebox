@@ -61,3 +61,8 @@ Vul de naam van je afspeellijst in de plaats van mijn afspeellijstnamen met enke
 Je kan in de instellingen je wachtwoord voor je persoonlijke hotspot aanpassen.
 
 
+Nu hoef je zelf nog je foto's te maken. (mijn breedte van fotos was 2.7cm om zo te passen. Veel prutswerk om deze mooi op het schijfje te krijgen. Op de achterkant plak je dan je nfc sticker. Mooiste kwaliteit is printen op fotopapier (mat zodat de vingerafdrukken er niet aanplakken).
+
+Vergeet geen play en pauze schijfje! :-)
+
+Succes en veel plezier!
