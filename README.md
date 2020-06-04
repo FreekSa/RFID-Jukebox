@@ -17,25 +17,24 @@ Raspberry pi 3 (elke pi met ingebouwde wifi zou moeten werken): https://www.kiwi
 HDMI naar VGA adapter: kost 5€ in de action. We gebruiken deze om de audio jack die achteraan de vga poort zit te gebruiken en zo mooie kwaliteit als output te krijgen.</br>
 NFC tags/stickers: kocht op alliexpress voor 1€ 10 NFC stickers (In België betaal je snel 15€ voor 10 stickers) Ik kocht er 50 in een keer en betaalde 5€ excl verzendkosten. (moet je wel een maand wachten).
 
-Daarnaast heb ik zelf een 3D printer en designde dus de case, deksel met holte voor de schijfjes en aparte schijfjes in fusion360 (gratis voor hobbyisten ;-) . (zie stl's, alsook fusion files)
+Daarnaast heb ik zelf een 3D printer en designde dus de case, deksel met holte voor de schijfjes en aparte schijfjes in fusion360 (gratis software voor hobbyisten ;-) . (stl's zijn toegevoegd, alsook fusion files)
 
+Aan jou om alles te printen. Kan bvb met online service 3DHubs of in een fablab/makerspace in je buurt.
 Nu we alles hebben kunnen we alles in elkaar prutsen. In bijgevoegde foto zie je hoe je de nfc reader verbind met je wemos D1. (pinnen heb ik niet aan de RFID gesoldeerd, wel aan de wemos D1. (eigen keuze :) ).
 
-Nu alles verbonden is zijn we er nog niet. Open het .ino bestand in de ARDUINO IDE.
-Arduino kent ons boardje niet. Dus moeten we een link toevoegen dat hij deze kent. Dit doe je als volgt:
-Klik op Bestand, Voorkeuren en plak bij volgende de link: Additionele boards beheer URL: http://arduino.esp8266.com/stable/package_esp8266com_index.json
+Nu alles verbonden is, volgt het programmeren van de wemos D1.
+Open het "DumpInfo.ino" bestand in de ARDUINO IDE.
+Arduino kent ons boardje niet. Dus moeten we een link toevoegen zodat hij deze kent. Dit doe je als volgt:
+Klik op Bestand, Voorkeuren en plak de link: Additionele boards beheer URL: http://arduino.esp8266.com/stable/package_esp8266com_index.json
 
-Daarna kent hij ons bordje maar om de NFC module te gebruiken moeten we een bibliotheek installeren. Klik daarvoor op: Hulpmiddelen, Bibliotheken beheren. Zoek naar: MFRC522 en klik op Installeer.
+Nu kent hij ons borde, maar om de NFC lezer te gebruiken moeten we een bibliotheek installeren. Klik daarvoor op: Hulpmiddelen, Bibliotheken beheren. Zoek naar: MFRC522 en klik op Installeer.
 
 Daarna selecteer je bij Boards: Wemos D1 mini pro V3. en bij poorten de juist COM.
 
-Extra info: Als Volumio met geen wifi-netwerk verbonden is dan maakt hij een eigen hotspot aan. Deze Heet Volumio en gebruiken we.
-Wachtwoord verander je in de volumio settings. Deze vind je door met de hotspot te verbinden en in je browser naar: volumio.local te surfen.
+Als alles is aangesloten open je het bestand: "DumpInfo.ino", dit vind je in de github of onder: Voorbeelden, MFRC522, Dumpinfo.
+Verander SSPin naar D8 ipv 10 en upload naar je bord. Ga naar Hulpmiddelen en open de seriele poort. Controleer dat hij zeker op 9600 Baud staat. Scan je tag en kopieer ergens de Tag UID (vb Kladblok). Scan al je tags die je wil gebruiken en maak een overzichtje naar welke afspeellijst je deze wil koppelen.
 
-Als alles is aangesloten open je het bestand: DumpInfo.ino, dit vind je hierbij of onder: Voorbeelden, MFRC522, Dumpinfo.
-Verander SSPin naar D8 ipv 10 en upload naar je bord. Ga naar Hulpmiddelen en open de seriele poort. Controleer dat hij zeker op 9600 Baud staat. Scan je tag en kopieer ergens de Tag UID (vb Kladblok).
-
-Nu open je de RFID met volumio.ino. Je plakt je tag onder clients tag. (verander deze met jou gescande UID).
+Nu open je de "RFID_met_volumio.ino". Je plakt je tag onder clients tag. (verander deze met jou gescande UID per tag).
 Daaronder verander je de url naar jou afspeellijst (leg ik uit onder het onderdeel Volumio)
 Daarna uploaden naar je board (vergeet je poort niet te selecteren!)
 
@@ -43,7 +42,10 @@ Daarna uploaden naar je board (vergeet je poort niet te selecteren!)
 
 Volumio
 
-Volumio flashen op je sd kaart doe je via win32DiskImager. Dit leg ik niet verder uit. Hiervan vind je veel tutorials op internet. zoek onder: img naar sd kaart flashen.
+Extra info: Als Volumio met geen wifi-netwerk verbonden is dan maakt hij een eigen hotspot aan. Deze heet Volumio en gebruiken we.
+Wachtwoord verander je in de volumio settings. Deze vind je door met de hotspot te verbinden en in je browser naar: volumio.local te surfen.
+
+Volumio flashen op je sd kaart doe je bvb via win32DiskImager. Dit leg ik niet verder uit. Hiervan vind je veel tutorials op internet. zoek onder: img naar sd kaart flashen.
 
 Verbindt via wifi op je pc met Volumio. Wachtwoord: Volumio. Surf naar http://volumio.local
 
