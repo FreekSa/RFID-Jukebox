@@ -56,11 +56,10 @@ Nu alles van geluid in orde is moeten we afspeellijsten maken. Kort uitgelegd: D
 
 Muziek overzetten vanop je pc:
 Open een verkenner en typ in de url: \\volumio.local
-Nu kan je muziek in de Internal storage slepen en vind je terug in je Muziekbibliotheek.
+Nu kan je muziek in de Internal storage slepen en vind je terug in volumio in Muziekbibliotheek.
 
-
-Vul de naam van je afspeellijst in de plaats van mijn afspeellijstnamen met enkele regels daarboven je tagnummer. Vergeet niet: een spatie tussen je afspeellijst doe je weg en vul je %20 in. (zie in mijn namen van afspeellijsten in het bestand).
-Je kan in de instellingen je wachtwoord voor je persoonlijke hotspot aanpassen.
+ARDUINO:
+Vul de naam van je afspeellijst in de plaats van mijn afspeellijstnamen in arduino met enkele regels daarboven je gescande tagnummer per afspeellijst. Vergeet niet: een spatie tussen je afspeellijst doe je weg en vul je %20 in. (zie in mijn namen van afspeellijsten in het bestand).
 
 
 Nu hoef je zelf nog je foto's te maken. (mijn breedte van fotos was 2.7cm om zo te passen. Veel prutswerk om deze mooi op het schijfje te krijgen. Op de achterkant plak je dan je nfc sticker. Mooiste kwaliteit is printen op fotopapier (mat zodat de vingerafdrukken er niet aanplakken).
