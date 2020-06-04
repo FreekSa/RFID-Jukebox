@@ -1,11 +1,11 @@
 # RFID-Jukebox
 
-Ik zag een artikel passeren over iemand die een kickstart project had nagebouwd.
+Ik zag een artikel passeren over iemand die een kickstarter project had nagebouwd.
 Link: https://imgur.com/a/aiS5xp7
-Ik had nog een Wemos D1 mini v3 liggen die nog geen bestemming had gekregen en een raspberry pi 3. Daarnaast had ik reeds een RFID module (MFRC522) met enkele tags.
+Ik had nog een Wemos D1 mini v3 liggen die nog geen bestemming had gekregen en een raspberry pi 3. Daarnaast had ik reeds een RFID module (MFRC522) met enkele NFC tags.
 
-Na wat zoeken stond zijn code op github: https://github.com/paulmassen/volumio-rfid-esp8266
-Zijn code was onvolledig; na een test bleek al snel dat hij een kaart scant en zo een link stuurt naar Volumio. Dus als een tag bleef liggen speelde hij na 3 seconden het nummer opnieuw af. Met een "if" structuur is deze aangepast. Zodoende leest hij de tag en als deze tag net voordien al gescand is dan moet hij niks doen.
+Na wat zoeken vond ik zijn code op github: https://github.com/paulmassen/volumio-rfid-esp8266
+Zijn code was onvolledig; na een test bleek al snel dat hij een kaart scant en een link stuurt naar Volumio, maar als een tag bleef liggen speelde hij na 3 seconden het nummer opnieuw af. Met een "if" structuur is deze aangepast. Functie: Nu leest hij de tag en als deze tag voordien al gescand is dan moet hij niks doen.
 
 
 
